@@ -31,14 +31,11 @@ RUN pip install awscli awsebcli
 # ---
 # ---
 
-RUN curl --location https://deb.nodesource.com/setup_9.x | bash -
+RUN curl --location https://deb.nodesource.com/setup_10.x | bash -
 
 RUN apt-get install -y nodejs
 
-RUN npm install -g grunt-cli@0.1.13 \
-                   s3-upload@0.0.3 \
-                   cloudflare-cli@1.4.0 \
-                   wintersmith@2.2.1 wintersmith-less@0.2.3 wintersmith-browserify@0.9.0
+RUN npm install -g yarn
 
 # ---
 # ---
