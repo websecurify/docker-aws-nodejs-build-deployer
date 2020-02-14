@@ -11,6 +11,8 @@ RUN apt-get update && \
         curl \
         git \
         jq \
+        zip \
+        unzip \
         build-essential \
         pkg-config \
         python python-dev \
