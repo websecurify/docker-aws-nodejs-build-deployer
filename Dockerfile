@@ -35,7 +35,7 @@ RUN pip install awscli awsebcli
 # ---
 # ---
 
-RUN curl --location https://deb.nodesource.com/setup_11.x | bash -
+RUN curl --location https://deb.nodesource.com/setup_14.x | bash -
 
 RUN apt-get install -y nodejs
 
