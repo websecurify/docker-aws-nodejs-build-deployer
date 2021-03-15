@@ -29,4 +29,6 @@ RUN true \
 COPY --from=kaniko /kaniko /kaniko
 COPY --from=amazon-ecr-credential-helper /go/bin/docker-credential-ecr-login /bin/docker-credential-ecr-login
 
+ENTRYPOINT ["node"]
+
 # ---
